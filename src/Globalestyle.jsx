@@ -37,6 +37,7 @@ const Globalstyle = createGlobalStyle`
 body{
     font-family: 'Josefin Sans', sans-serif;
     background-color: var(--Very-Dark-Blue);
+    z-index: -1;
 }
 
 }

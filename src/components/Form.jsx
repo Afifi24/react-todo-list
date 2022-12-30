@@ -32,7 +32,7 @@ export default form
 
 const Formstyle = styled.div`
 /* background-color: lightblue; */
-height: 40vh;
+min-height: 40vh;
 display: flex;
 justify-content: flex-start;
 align-items: center;
