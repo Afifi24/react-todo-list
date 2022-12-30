@@ -34,7 +34,6 @@ export default Todolist
 
 const Todoliststyle = styled.div`
 min-height: 60vh;
-background-color: var(--Very-Dark-Blue);
 display: flex;
 align-items: flex-start;
 justify-content: center;
