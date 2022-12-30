@@ -39,6 +39,7 @@ align-items: center;
 position: relative;
 overflow: hidden;
 flex-direction: column;
+padding-bottom: 5rem;
 .form{
     display: flex;
     align-items: center;
