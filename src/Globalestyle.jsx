@@ -63,7 +63,7 @@ body{
     color: var(--Dark-Grayish-Blue);
 }
 #light .todo-list{
-    background-color: #fff; 
+    background-color: var(--Very-Light-Gray); 
 }
 #light .section__mobile{
     background-color: #fff;

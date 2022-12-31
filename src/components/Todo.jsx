@@ -108,7 +108,7 @@ p{
 }
 @media screen and (max-width:500px) {
 .light{
-  width: 330px;
+  width: 325px;
 }
 
 }
