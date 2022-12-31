@@ -1,8 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Light from '../images/icon-sun.svg'
-import Image from '../images/bg-desktop-dark.jpg'
-const form = ({input, setInput, setTodos, todos,setShow}) => {
+import Dark from '../images/icon-moon.svg'
+import DarkImage from '../images/bg-desktop-dark.jpg'
+import LightImage from '../images/bg-desktop-light.jpg'
+import hi from '../images/icon-moon.svg'
+const form = ({input, setInput, setTodos, todos,setShow,theme,ToggleTheme}) => {
   const Addhandler = (e)=>{
     e.preventDefault()
     setTodos([...todos,
@@ -15,13 +18,13 @@ const form = ({input, setInput, setTodos, todos,setShow}) => {
   
   return (
     <Formstyle>
-    <div className="bg__form"><img src={Image} alt="" /></div>
+    <div className="bg__form"><img src={theme==='dark'?DarkImage:LightImage} alt="" /></div>
    <div className="form">
    <h1>Todo</h1>
-     <img src={Light} alt="" />
+     <img className='toggleimage' onClick={ToggleTheme} src={theme=='light'?Dark:Light} alt="" />
    </div>
     <form id='form'>
-        <input onChange={(e)=>setInput(e.target.value)} value={input} type="text"       placeholder='Create a new todo...' />
+        <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Create a new todo...' />
         <button  onClick={Addhandler} type='submit'></button>
     </form>
     </Formstyle>        
@@ -54,14 +57,18 @@ padding-bottom: 5rem;
     }
    
 }
+.toggleimage{
+  cursor: pointer;
+}
 .bg__form{
     width: 100%;
+    bottom: 0;
     top: 0;
     left: 0;
     position: absolute;
     z-index: -1;
     img{
-        /* width: 100%; */
+        height: 100%;
     }
 }
 #form{

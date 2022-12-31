@@ -36,11 +36,45 @@ const Globalstyle = createGlobalStyle`
 
 body{
     font-family: 'Josefin Sans', sans-serif;
-    background-color: var(--Very-Dark-Blue);
+    
     z-index: -1;
+#light #form input{
+    background-color: var(--Very-Light-Grayish-Blue);
+    color: var(--Very-Dark-Grayish-Blue);
+    ::placeholder{
+        color: var(--Very-Dark-Grayish-Blue);
+    }
 }
+#light .active__completed{
+    background-color: #fff;
+   color: var(--Dark-Grayish-Blue);
+   box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+   
 
 }
+#light .light{
+     background-color: #fff;
+     box-shadow: 5px 0px 20px rgba(0,0,0,0.1);
+    color: var(--Very-Dark-Grayish-Blue);
+    border-bottom:1px solid var(--Light-Grayish-Blue);
+    
+}
+#light .line-trough{
+    color: var(--Dark-Grayish-Blue);
+}
+#light .todo-list{
+    background-color: #fff; 
+}
+#light .section__mobile{
+    background-color: #fff;
+   color: var(--Dark-Grayish-Blue);
+   box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+}
+
+
+}
+
 
 `
 export default Globalstyle

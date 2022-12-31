@@ -22,6 +22,7 @@ const Todo = ({todo,todos,setTodos,setShow}) => {
   }
   return (
     <Todostyle>
+      <div className="light">
       <div className="inpt">
       <button onClick={Checkbtn} className={`check ${todo.completed? 'active':''}`}>
         <img src={todo.completed? img : '' } alt="" />
@@ -29,6 +30,7 @@ const Todo = ({todo,todos,setTodos,setShow}) => {
       <p className={todo.completed? 'line-trough':''}>{todo.text} </p>
       </div>
       <button onClick={Delethandler} className='delete'><img src={image} alt="" /></button>
+      </div>
     </Todostyle>
   )
 }
@@ -36,7 +38,8 @@ const Todo = ({todo,todos,setTodos,setShow}) => {
 export default Todo
 
 const Todostyle = styled.div`
-display: flex;
+.light{
+  display: flex;
 align-items: center;
 justify-content: space-between;
 color: var(--Light-Grayish-Blue);
@@ -49,9 +52,12 @@ background-color: var(--Very-Dark-Desaturated-Blue);
 border-bottom:1px solid var(--Very-Dark-Grayish-Blue);
 cursor: pointer;
 transition: var(--transition);
+z-index: 100;
 &:hover .delete{
 opacity: 1;
 }
+}
+
 .inpt{
   display: flex;
   align-items: center;
@@ -101,7 +107,9 @@ p{
 
 }
 @media screen and (max-width:500px) {
+.light{
+  width: 340px;
+}
 
-width: 340px;
 }
 `
