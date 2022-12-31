@@ -69,6 +69,7 @@ padding-bottom: 5rem;
     z-index: -1;
     img{
         height: 100%;
+        width: 100%;
     }
 }
 #form{
