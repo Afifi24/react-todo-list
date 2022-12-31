@@ -106,13 +106,13 @@ padding-bottom: 5rem;
 @media screen and (max-width:500px) {
   
   .form{
-    width: 340px;
+    width: 330px;
   }
   #form{
     align-items: center;
     justify-content: center;
     input{
-      width: 340px;
+      width: 330px;
     }
   }
 }

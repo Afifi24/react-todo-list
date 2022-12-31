@@ -105,7 +105,7 @@ section{
 }
 @media screen and (max-width:500px) {
 .active__completed{
-  width: 340px;
+  width: 330px;
   transition: var(--transition);
 }
 .section__mobile{
@@ -115,7 +115,7 @@ section{
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  width: 340px;
+  width: 330px;
   background-color: var(--Very-Dark-Desaturated-Blue);
     height: 40px;
     border-bottom-left-radius:3px;
